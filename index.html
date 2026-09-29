@@ -63,8 +63,8 @@ const P = {
   joey:{n:"Joey", t:"Pura resenha. Você é leal, carismática e sabe que a vida fica bem melhor com comida boa e gente boa por perto. Fácil de gostar, mano."}
 };
 const Q = [
- ["Sábado à noite. Qual é o rolê?",[["monica","Chamar a galera pra casa e caprichar no jantar"],["rachel","Me arrumar toda e ir num lugar novo"],["phoebe","Sem plano, deixo a vida me levar"],["joey","Pizza, sofá e maratona, sem estresse"]]],
- ["Deu ruim. Qual é a sua?",[["monica","Planilha e plano B, sempre"],["rachel","Pergunto pra geral e faço do meu jeito"],["phoebe","Confio no universo, uma hora se ajeita"],["joey","Como primeiro, penso depois kkkk"]]],
+ ["Sábado à noite. Qual a melhor programação?",[["monica","Chamar a galera pra casa e caprichar no jantar"],["rachel","Me arrumar toda e ir num lugar novo"],["phoebe","Sem plano, deixo a vida me levar"],["joey","Pizza, sofá e maratona, sem estresse"]]],
+ ["Deu ruim. Oque você faz?",[["monica","Planilha e plano B, sempre"],["rachel","Pergunto pra geral e faço do meu jeito"],["phoebe","Confio no universo, uma hora se ajeita"],["joey","Como primeiro, penso depois kkkk"]]],
  ["Chegou atrasada. Qual a desculpa?",[["monica","Eu? Atrasada? Jamais"],["rachel","O look não fechou, pô"],["phoebe","O caminho me levou pra outro lugar"],["joey","Tinha comida no caminho, fazer o quê"]]],
  ["No Central Perk, você pede:",[["monica","O café certinho, do jeito que tem que ser"],["rachel","O maior que tiver, cheio de coisa"],["phoebe","Qualquer um, se a companhia for boa"],["joey","Um café e um sanduíche, de boa"]]],
  ["Como você quer ser lembrada?",[["monica","Pela dedicação"],["rachel","Pelo estilo e pela evolução"],["phoebe","Por ser diferentona"],["joey","Pela resenha e pela alegria"]]]
@@ -73,7 +73,7 @@ const app = document.getElementById("app");
 let i = 0, score = {monica:0,rachel:0,phoebe:0,joey:0};
 
 function start(){
-  app.innerHTML = '<div class="step"><p>Fala, '+NOME+'! Separei cinco perguntinhas pra descobrir qual Friend você é. Bora? Depois tem uma surpresa esperando você.</p><div class="center"><button class="cta" id="go">Bora começar</button></div></div>';
+  app.innerHTML = '<div class="step"><p>Ooi minha vida! Separei cinco Perguntas pra descobrir qual Friend você é. Depois tem uma surpresa esperando você.</p><div class="center"><button class="cta" id="go">Bora começar</button></div></div>';
   document.getElementById("go").onclick = ask;
 }
 function ask(){
